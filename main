@@ -1,0 +1,7 @@
+local Char = game.Players.LocalPlayer.Character
+
+Char.Head.Mesh.Parent = game.CoreGui
+Char.Head:ClearAllChildren()
+game.CoreGui.Mesh.Parent = Char.Head
+Char.Head.Parent = game.Lighting
+game.Lighting.Head.Parent = Char
